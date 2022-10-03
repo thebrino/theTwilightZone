@@ -19,7 +19,7 @@ body {
 }
 
 .grid-container .box {
+  cursor: pointer;
   text-align: center;
-  background-color: #111;
   color: #eee;
 }

@@ -9,23 +9,61 @@ html {
   box-sizing: border-box;
 }
 
+:root {
+  --bg: #ffffff;
+  --icon: "◒";
+}
+
 body {
-  background-color: #000000;
+  background-color: var(--bg);
+}
+
+.dark {
+  --bg: #000000;
+  --icon: "◒";
+  color: white;
 }
 
 .header {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   text-align: center;
+  width: 100%;
+}
+
+.container-header {
+  width: 100%;
+  display: flex;
+  width: 1821px;
+  margin: 0 auto;
+}
+
+#imgDark {
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  text-align: right;
+  cursor: pointer;
+  width: 50%;
+  font-size: 4rem;
+  margin: 37px 200px 25px 0;
+  text-shadow: 0 0 0.2em #d36690, 0 0 0.2em #d36690, 0 0 0.2em #d36690,
+    #d36690 1px -1px, #d36690 -1px 1px, #d36690 1px 1px, #d36690 -1px -1px;
+}
+
+#imgDark::before {
+  content: var(--icon);
 }
 
 h1 {
-  margin: 25px;
+  margin: 50px 0 25px 200px;
   color: #ffffff;
   text-shadow: 0 0 0.2em #d36690, 0 0 0.2em #d36690, 0 0 0.2em #d36690,
     #d36690 1px -1px, #d36690 -1px 1px, #d36690 1px 1px, #d36690 -1px -1px;
   font-size: 4rem;
+  width: 50%;
 }
 
 .grid-container {
@@ -67,11 +105,11 @@ h1 {
   width: 100%;
   bottom: 0;
   color: #ffffff;
-  text-shadow: 0 0 0.2em #000000, 0 0 0.2em #000000, 0 0 0.2em #000000,
-    #00000085 3px 3px 3px, #00000085 3px 3px 3px, #00000085 3px 3px 3px,
-    #00000085 3px 3px 3px;
+  text-shadow: 0 0 0.2em #d36690, 0 0 0.2em #d36690, 0 0 0.2em #d36690,
+    #00000060 3px 3px 3px, #00000060 3px 3px 3px, #00000060 3px 3px 3px,
+    #00000060 3px 3px 3px;
   margin-bottom: 5px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Times New Roman", Times, serif;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: visibility 0s, opacity 0.2s linear;
@@ -351,3 +389,5 @@ h1 {
   visibility: visible;
   opacity: 1;
 }
+
+/* responsividade */

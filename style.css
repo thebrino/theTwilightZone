@@ -71,34 +71,43 @@ h1 {
   outline: none;
   justify-content: center;
   align-items: center;
-  margin: 50px;
+  margin: 50px auto;
+  width: 1821px;
+  position: relative;
+  min-height: 100vh;
 }
 
-.gallery {
+.grid-container .gallery {
   display: grid;
-  grid-template-columns: repeat(3, 600px);
-  grid-template-rows: repeat(7, 600px);
+  grid-template-columns: repeat(3, 350px);
+  grid-template-rows: repeat(7, 350px);
   grid-gap: 7px;
   align-items: center;
   justify-content: center;
   position: relative;
 }
 
-.box {
+.grid-container .gallery .box {
   cursor: pointer;
   object-fit: cover;
   position: absolute;
+  width: 350px;
+  height: 350px;
+  overflow: hidden;
 }
 
-.gallery figure img {
+.grid-container .gallery .box img {
   opacity: 1;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-/* .gallery figure:hover img {
+.grid-container .gallery .box:hover img {
   transform: scale(1.1);
-} */
+}
 
 .gallery div {
   position: absolute;
@@ -117,17 +126,51 @@ h1 {
   font-size: 2rem;
 }
 
+.gallery figure:hover .text {
+  width: 100%;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 1;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.grid-container .popup-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #0000007c;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  display: none;
+}
+
+.grid-container .popup-img span {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 40px;
+  font-weight: bolder;
+  color: #ffffff;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.grid-container .popup-img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 820px;
+  object-fit: cover;
+}
+
 .box-1 {
   grid-column-start: 1;
   grid-column-end: 1;
   grid-row-start: 1;
   grid-row-end: 1;
-}
-.gallery figure:hover .text-1 {
-  width: 100%;
-  padding: 8px 15px;
-  visibility: visible;
-  opacity: 1;
 }
 
 .box-2 {
@@ -136,24 +179,12 @@ h1 {
   grid-row-start: 1;
   grid-row-end: 1;
 }
-.gallery figure:hover .text-2 {
-  width: 100%;
-  padding: 8px 15px;
-  visibility: visible;
-  opacity: 1;
-}
 
 .box-3 {
   grid-column-start: 3;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 1;
-}
-.gallery figure:hover .text-3 {
-  width: 100%;
-  padding: 8px 15px;
-  visibility: visible;
-  opacity: 1;
 }
 
 .box-4 {
@@ -162,24 +193,12 @@ h1 {
   grid-row-start: 2;
   grid-row-end: 2;
 }
-.gallery figure:hover .text-4 {
-  width: 100%;
-  padding: 8px 15px;
-  visibility: visible;
-  opacity: 1;
-}
 
 .box-5 {
   grid-column-start: 2;
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 2;
-}
-.gallery figure:hover .text-5 {
-  width: 100%;
-  padding: 8px 15px;
-  visibility: visible;
-  opacity: 1;
 }
 
 .box-6 {
@@ -188,24 +207,12 @@ h1 {
   grid-row-start: 2;
   grid-row-end: 2;
 }
-.gallery figure:hover .text-6 {
-  width: 100%;
-  padding: 8px 15px;
-  visibility: visible;
-  opacity: 1;
-}
 
 .box-7 {
   grid-column-start: 1;
   grid-column-end: 1;
   grid-row-start: 3;
   grid-row-end: 3;
-}
-.gallery figure:hover .text-7 {
-  width: 100%;
-  padding: 8px 15px;
-  visibility: visible;
-  opacity: 1;
 }
 
 .box-8 {
@@ -214,24 +221,12 @@ h1 {
   grid-row-start: 3;
   grid-row-end: 3;
 }
-.gallery figure:hover .text-8 {
-  width: 100%;
-  padding: 8px 15px;
-  visibility: visible;
-  opacity: 1;
-}
 
 .box-9 {
   grid-column-start: 3;
   grid-column-end: 3;
   grid-row-start: 3;
   grid-row-end: 3;
-}
-.gallery figure:hover .text-9 {
-  width: 100%;
-  padding: 8px 15px;
-  visibility: visible;
-  opacity: 1;
 }
 
 .box-10 {
@@ -240,24 +235,12 @@ h1 {
   grid-row-start: 4;
   grid-row-end: 4;
 }
-.gallery figure:hover .text-10 {
-  width: 100%;
-  padding: 8px 15px;
-  visibility: visible;
-  opacity: 1;
-}
 
 .box-11 {
   grid-column-start: 2;
   grid-column-end: 2;
   grid-row-start: 4;
   grid-row-end: 4;
-}
-.gallery figure:hover .text-11 {
-  width: 100%;
-  padding: 8px 15px;
-  visibility: visible;
-  opacity: 1;
 }
 
 .box-12 {
@@ -266,24 +249,12 @@ h1 {
   grid-row-start: 4;
   grid-row-end: 4;
 }
-.gallery figure:hover .text-12 {
-  width: 100%;
-  padding: 8px 15px;
-  visibility: visible;
-  opacity: 1;
-}
 
 .box-13 {
   grid-column-start: 1;
   grid-column-end: 1;
   grid-row-start: 5;
   grid-row-end: 5;
-}
-.gallery figure:hover .text-13 {
-  width: 100%;
-  padding: 8px 15px;
-  visibility: visible;
-  opacity: 1;
 }
 
 .box-14 {
@@ -292,24 +263,12 @@ h1 {
   grid-row-start: 5;
   grid-row-end: 5;
 }
-.gallery figure:hover .text-14 {
-  width: 100%;
-  padding: 8px 15px;
-  visibility: visible;
-  opacity: 1;
-}
 
 .box-15 {
   grid-column-start: 3;
   grid-column-end: 3;
   grid-row-start: 5;
   grid-row-end: 5;
-}
-.gallery figure:hover .text-15 {
-  width: 100%;
-  padding: 8px 15px;
-  visibility: visible;
-  opacity: 1;
 }
 
 .box-16 {
@@ -318,24 +277,12 @@ h1 {
   grid-row-start: 6;
   grid-row-end: 6;
 }
-.gallery figure:hover .text-16 {
-  width: 100%;
-  padding: 8px 15px;
-  visibility: visible;
-  opacity: 1;
-}
 
 .box-17 {
   grid-column-start: 2;
   grid-column-end: 2;
   grid-row-start: 6;
   grid-row-end: 6;
-}
-.gallery figure:hover .text-17 {
-  width: 100%;
-  padding: 8px 15px;
-  visibility: visible;
-  opacity: 1;
 }
 
 .box-18 {
@@ -344,24 +291,12 @@ h1 {
   grid-row-start: 6;
   grid-row-end: 6;
 }
-.gallery figure:hover .text-18 {
-  width: 100%;
-  padding: 8px 15px;
-  visibility: visible;
-  opacity: 1;
-}
 
 .box-19 {
   grid-column-start: 1;
   grid-column-end: 1;
   grid-row-start: 7;
   grid-row-end: 7;
-}
-.gallery figure:hover .text-19 {
-  width: 100%;
-  padding: 8px 15px;
-  visibility: visible;
-  opacity: 1;
 }
 
 .box-20 {
@@ -370,12 +305,6 @@ h1 {
   grid-row-start: 7;
   grid-row-end: 7;
 }
-.gallery figure:hover .text-20 {
-  width: 100%;
-  padding: 8px 15px;
-  visibility: visible;
-  opacity: 1;
-}
 
 .box-21 {
   grid-column-start: 3;
@@ -383,11 +312,28 @@ h1 {
   grid-row-start: 7;
   grid-row-end: 7;
 }
-.gallery figure:hover .text-21 {
-  width: 100%;
-  padding: 8px 15px;
-  visibility: visible;
-  opacity: 1;
-}
 
 /* responsividade */
+@media (max-width: 768px) {
+  .grid-container .popup-img img {
+    width: 95%;
+  }
+}
+
+@media (max-width: 425px) {
+  .grid-container .popup-img img {
+    width: 95%;
+  }
+}
+
+@media (max-width: 375px) {
+  .grid-container .popup-img img {
+    width: 95%;
+  }
+}
+
+@media (max-width: 320px) {
+  .grid-container .popup-img img {
+    width: 95%;
+  }
+}

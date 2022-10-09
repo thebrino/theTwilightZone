@@ -46,9 +46,9 @@ body {
   align-items: right;
   text-align: right;
   cursor: pointer;
-  width: 50%;
+  width: 3%;
   font-size: 4rem;
-  margin: 37px 200px 25px 0;
+  margin: 48px 200px 25px 0;
   text-shadow: 0 0 0.2em #d36690, 0 0 0.2em #d36690, 0 0 0.2em #d36690,
     #d36690 1px -1px, #d36690 -1px 1px, #d36690 1px 1px, #d36690 -1px -1px;
 }
@@ -63,10 +63,12 @@ h1 {
   text-shadow: 0 0 0.2em #d36690, 0 0 0.2em #d36690, 0 0 0.2em #d36690,
     #d36690 1px -1px, #d36690 -1px 1px, #d36690 1px 1px, #d36690 -1px -1px;
   font-size: 4rem;
-  width: 50%;
+  width: 97%;
 }
 
 .grid-container {
+  display: flex;
+  flex-wrap: wrap;
   border: none;
   outline: none;
   justify-content: center;

@@ -16,8 +16,7 @@ html {
 
 body {
   width: 100%;
-  height: 100%;
-  position: absolute;
+  height: 100vh;
   background-color: var(--bg);
 }
 
@@ -33,41 +32,33 @@ body {
   border: none;
   outline: none;
   justify-content: center;
-  align-items: center;
   margin: 0 auto;
   width: 1064px;
-  height: 2492px;
-  position: relative;
+  height: 100%;
 }
 
 .header {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
   align-items: center;
   text-align: center;
-  width: 1064px;
+  width: 100%;
+  height: 120px;
 }
 
 .container-header {
   display: flex;
   margin: 0 auto;
   height: 100%;
-  width: 100%;
+  width: 1064px;
   justify-content: space-between;
   margin-top: 40px;
   margin-bottom: 40px;
 }
 
 #imgDark {
-  display: flex;
-  flex-direction: column;
-  align-items: right;
   text-align: right;
   cursor: pointer;
-  width: 3%;
   font-size: 4rem;
-margin-right: 18px;
   text-shadow: 0 0 0.2em #d36690, 0 0 0.2em #d36690, 0 0 0.2em #d36690,
     #d36690 1px -1px, #d36690 -1px 1px, #d36690 1px 1px, #d36690 -1px -1px;
 }
@@ -77,12 +68,10 @@ margin-right: 18px;
 }
 
 h1 {
-  margin-left: 5px;
   color: #ffffff;
   text-shadow: 0 0 0.2em #d36690, 0 0 0.2em #d36690, 0 0 0.2em #d36690,
     #d36690 1px -1px, #d36690 -1px 1px, #d36690 1px 1px, #d36690 -1px -1px;
   font-size: 4rem;
-  width: 97%;
 }
 
 .grid-container .gallery {
@@ -93,6 +82,7 @@ h1 {
   align-items: center;
   justify-content: center;
   position: relative;
+  padding-bottom: 40px;
 }
 
 .grid-container .gallery .box {
@@ -143,7 +133,7 @@ h1 {
   text-align: center;
 }
 
-.grid-container .popup-img {
+.grid-container .popup-container {
   position: fixed;
   top: 0;
   left: 0;
@@ -154,7 +144,7 @@ h1 {
   display: none;
 }
 
-.grid-container .popup-img span {
+.grid-container .popup-container span {
   position: absolute;
   top: 0;
   right: 10px;
@@ -165,7 +155,7 @@ h1 {
   z-index: 100;
 }
 
-.grid-container .popup-img img {
+.grid-container .popup-container img {
   position: absolute;
   top: 50%;
   left: 50%;

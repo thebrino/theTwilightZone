@@ -1,131 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>theTwilightZone</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <header>
-      <div class="container-header">
-        <h1 class="title">theTwilightZone</h1>
-        <div id="imgDark"></div>
-      </div>
-    </header>
-    <div class="grid-container">
-      <div class="gallery" id="popup">
-        <figure class="box box-1">
-          <img src="img/999_everywhere.png" alt="" id="galleryImg" />
-          <div class="text">999 everywhere</div>
-        </figure>
-        <figure class="box box-2">
-          <img src="img/inLove.jpg" alt="" id="galleryImg" />
-          <div class="text">so in love...</div>
-        </figure>
-        <figure class="box box-3">
-          <img src="img/silly.png" alt="" id="galleryImg" />
-          <div class="text">4fun</div>
-        </figure>
-        <figure class="box box-4">
-          <img src="img/agony_in_the_garden.png" alt="" id="galleryImg" />
-          <div class="text">:::eternalAgony///</div>
-        </figure>
-        <figure class="box box-5">
-          <img src="img/i_love_puzzle.png" alt="" id="galleryImg" />
-          <div class="text">i♡theWitness</div>
-        </figure>
-        <figure class="box box-6">
-          <img src="img/parasiteDream.png" alt="" id="galleryImg" />
-          <div class="text">sentimentalcorp.org</div>
-        </figure>
-        <figure class="box box-7">
-          <img src="img/new_days.png" alt="" id="galleryImg" />
-          <div class="text">obseSSion>'*hAte_</div>
-        </figure>
-        <figure class="box box-8">
-          <img src="img/the_lighthouse2.png" alt="" id="galleryImg" />
-          <div class="text">theLightHouse x theTalosPrinciple</div>
-        </figure>
-        <figure class="box box-9">
-          <img src="img/melancholia.png" alt="" id="galleryImg" />
-          <div class="text">planetary_devastation+//melancholia*'</div>
-        </figure>
-        <figure class="box box-10">
-          <img src="img/this_one_idek.png" alt="" id="galleryImg" />
-          <div class="text">:::mememe_when_you:::</div>
-        </figure>
-        <figure class="box box-11">
-          <img src="img/2046.png" alt="" id="galleryImg" />
-          <div class="text">all memories are traces of tears//2046</div>
-        </figure>
-        <figure class="box box-12">
-          <img src="img/wadaiko.png" alt="" id="galleryImg" />
-          <div class="text">___wadaiko_master_2011+*'</div>
-        </figure>
-        <figure class="box box-13">
-          <img src="img/bjork.png" alt="" id="galleryImg" />
-          <div class="text">YOUR TELEVISION IS ABOUT TO EXPLODE</div>
-        </figure>
-        <figure class="box box-14">
-          <img src="img/love.png" alt="" id="galleryImg" />
-          <div class="text">inTheMoodForLove</div>
-        </figure>
-        <figure class="box box-15">
-          <img src="img/dead_end222.png" alt="" id="galleryImg" />
-          <div class="text">i don't wanna lose myself on you</div>
-        </figure>
-        <figure class="box box-16">
-          <img src="img/zabuza.png" alt="" id="galleryImg" />
-          <div class="text">chungkingExpress</div>
-        </figure>
-        <figure class="box box-17">
-          <img src="img/fallen_angels.png" alt="" id="galleryImg" />
-          <div class="text">fallenAngels</div>
-        </figure>
-        <figure class="box box-18">
-          <img src="img/sakura.png" alt="" id="galleryImg" />
-          <div class="text">quanto mais chora mais linda fica</div>
-        </figure>
-        <figure class="box box-19">
-          <img src="img/succ.jpg" alt="" id="galleryImg" />
-          <div class="text">:::MELANCHOLY:::</div>
-        </figure>
-        <figure class="box box-20">
-          <img src="img/dg.png" alt="" id="galleryImg" />
-          <div class="text">//beware!</div>
-        </figure>
-        <figure class="box box-21">
-          <img src="img/no4.jpg" alt="" id="galleryImg" />
-          <div class="text">:::regret:::</div>
-        </figure>
-      </div>
-      <div class="popup-container" id="popupContainer">
-        <span id="popupSpan">&times;</span>
-        <img src="img/999_everywhere.png" alt="" id="popupImg" />
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>theTwilightZone</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <div class="container-header">
+      <h1 class="title">theTwilightZone</h1>
+      <div id="imgDark"></div>
     </div>
-    <script>
-      document.querySelectorAll(".gallery img").forEach((image) => {
-        image.onclick = () => {
-          document.querySelector(".popup-container").style.display = "block";
-          document.querySelector(".popup-container img").src =
-            image.getAttribute("src");
-        };
-      });
-      document.querySelector(".popup-container span").onclick = () => {
-        document.querySelector(".popup-container").style.display = "none";
+  </header>
+  <div class="grid-container">
+    <div class="gallery" id="popup">
+      <figure class="box box-1">
+        <img src="img/old_shining.png" alt="" id="galleryImg" />
+        <div class="text">OLDBOY</div>
+      </figure>
+      <figure class="box box-2">
+        <img src="img/999_everywhere.png" alt="" id="galleryImg" />
+        <div class="text">999 everywhere</div>
+      </figure>
+      <figure class="box box-3">
+        <img src="img/inLove.jpg" alt="" id="galleryImg" />
+        <div class="text">so in love...</div>
+      </figure>
+      <figure class="box box-4">
+        <img src="img/silly.png" alt="" id="galleryImg" />
+        <div class="text">4fun</div>
+      </figure>
+      <figure class="box box-5">
+        <img src="img/agony_in_the_garden.png" alt="" id="galleryImg" />
+        <div class="text">:::eternalAgony///</div>
+      </figure>
+      <figure class="box box-6">
+        <img src="img/i_love_puzzle.png" alt="" id="galleryImg" />
+        <div class="text">i♡theWitness</div>
+      </figure>
+      <figure class="box box-7">
+        <img src="img/parasiteDream.png" alt="" id="galleryImg" />
+        <div class="text">sentimentalcorp.org</div>
+      </figure>
+      <figure class="box box-8">
+        <img src="img/new_days.png" alt="" id="galleryImg" />
+        <div class="text">obseSSion>'*hAte_</div>
+      </figure>
+      <figure class="box box-9">
+        <img src="img/the_lighthouse2.png" alt="" id="galleryImg" />
+        <div class="text">theLightHouse x theTalosPrinciple</div>
+      </figure>
+      <figure class="box box-10">
+        <img src="img/melancholia.png" alt="" id="galleryImg" />
+        <div class="text">planetary_devastation+//melancholia*'</div>
+      </figure>
+      <figure class="box box-11">
+        <img src="img/this_one_idek.png" alt="" id="galleryImg" />
+        <div class="text">:::mememe_when_you:::</div>
+      </figure>
+      <figure class="box box-12">
+        <img src="img/2046.png" alt="" id="galleryImg" />
+        <div class="text">all memories are traces of tears//2046</div>
+      </figure>
+      <figure class="box box-13">
+        <img src="img/wadaiko.png" alt="" id="galleryImg" />
+        <div class="text">___wadaiko_master_2011+*'</div>
+      </figure>
+      <figure class="box box-14">
+        <img src="img/bjork.png" alt="" id="galleryImg" />
+        <div class="text">YOUR TELEVISION IS ABOUT TO EXPLODE</div>
+      </figure>
+      <figure class="box box-15">
+        <img src="img/love.png" alt="" id="galleryImg" />
+        <div class="text">inTheMoodForLove</div>
+      </figure>
+      <figure class="box box-16">
+        <img src="img/dead_end222.png" alt="" id="galleryImg" />
+        <div class="text">i don't wanna lose myself on you</div>
+      </figure>
+      <figure class="box box-17">
+        <img src="img/zabuza.png" alt="" id="galleryImg" />
+        <div class="text">chungkingExpress</div>
+      </figure>
+      <figure class="box box-18">
+        <img src="img/fallen_angels.png" alt="" id="galleryImg" />
+        <div class="text">fallenAngels</div>
+      </figure>
+      <figure class="box box-19">
+        <img src="img/sakura.png" alt="" id="galleryImg" />
+        <div class="text">quanto mais chora mais linda fica</div>
+      </figure>
+      <figure class="box box-20">
+        <img src="img/succ.jpg" alt="" id="galleryImg" />
+        <div class="text">:::MELANCHOLY:::</div>
+      </figure>
+      <figure class="box box-21">
+        <img src="img/dg.png" alt="" id="galleryImg" />
+        <div class="text">//beware!</div>
+      </figure>
+      <figure class="box box-22">
+        <img src="img/no4.jpg" alt="" id="galleryImg" />
+        <div class="text">:::regret:::</div>
+      </figure>
+    </div>
+    <div class="popup-container" id="popupContainer">
+      <span id="popupSpan">&times;</span>
+      <img src="img/999_everywhere.png" alt="" id="popupImg" />
+    </div>
+  </div>
+  <script>
+    document.querySelectorAll(".gallery img").forEach((image) => {
+      image.onclick = () => {
+        document.querySelector(".popup-container").style.display = "block";
+        document.querySelector(".popup-container img").src =
+          image.getAttribute("src");
       };
-    </script>
-    <script src="script.js"></script>
-  </body>
+    });
+    document.querySelector(".popup-container span").onclick = () => {
+      document.querySelector(".popup-container").style.display = "none";
+    };
+  </script>
+  <script src="script.js"></script>
+</body>
+
 </html>
